@@ -46,36 +46,21 @@ public class ItemGenerator {
 		}
 
 		if (itemPicker == 1) {
-			int armorPicker = rng.nextInt(10);
+			int armorPicker = rng.nextInt(5);
 			if (armorPicker == 0) {
-				item = new Item(ItemType.Armor, "Steel Horned Helmet", 17, 5, 125);
-			}
-			else if (armorPicker == 1) {
 				item = new Item(ItemType.Armor, "Steel Armor", 31, 35, 275);
 			}
+			else if (armorPicker == 1) {
+				item = new Item(ItemType.Armor, "Iron Armor", 25, 30, 125);
+			}
 			else if (armorPicker == 2) {
-				item = new Item(ItemType.Armor, "Steel Cuffed Boots", 12, 8, 55);
+				item = new Item(ItemType.Armor, "Dwarven Armor", 34, 45, 400);
 			}
 			else if (armorPicker == 3) {
-				item = new Item(ItemType.Armor, "Steel Nordic Gauntlets", 12, 4, 55);
+				item = new Item(ItemType.Armor, "Elven Armor", 29, 4, 225);
 			}
 			else if (armorPicker == 4) {
-				item = new Item(ItemType.Armor, "Steel Shield", 24, 12, 150);
-			}
-			else if (armorPicker == 5) {
-				item = new Item(ItemType.Armor, "Daedric Helmet", 23, 15, 1600);
-			}
-			else if (armorPicker == 6) {
 				item = new Item(ItemType.Armor, "Daedric Armor", 49, 50, 3200);
-			}
-			else if (armorPicker == 7) {
-				item = new Item(ItemType.Armor, "Daedric Gauntlets", 18, 6, 625);
-			}
-			else if (armorPicker == 8) {
-				item = new Item(ItemType.Armor, "Daedric Boots", 18, 10, 625);
-			}
-			else if (armorPicker == 9) {
-				item = new Item(ItemType.Armor, "Daedric Shield", 36, 15, 1600);
 			}
 		}
 
