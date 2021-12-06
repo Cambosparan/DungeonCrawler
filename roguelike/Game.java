@@ -31,7 +31,7 @@ public class Game {
         };
         Terminal.setForeground(Color.GREEN);
         for (int row = 0; row < cmds.length; row++) {
-            Terminal.warpCursor(row + 1, room.getCols());
+            Terminal.warpCursor(row + 2, room.getCols());
             System.out.print(cmds[row]);
         }
         Terminal.reset();
