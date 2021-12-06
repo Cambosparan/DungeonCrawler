@@ -71,14 +71,14 @@ public class Inventory {
         // print a heading row
         // the numbers and junk are to make it print in nice columns
         Terminal.setForeground(Color.RED);
-        System.out.printf("%-4s %-40s %-8s %-8s %-8s\n\r", "No.", "Name", "Weight", "Value", "Strength");
+        System.out.printf("%-4s %-40s %-8s %-8s %-8s\n\r", "No.", "Name", "Strength", "Weight", "Value");
         Terminal.reset();
 
         // print each item out
         int num = 0;
         for (Item i : items) {
             if (filter == null || i.getType() == filter) {
-                System.out.printf("%-4d %-40s %-8s %-8s %-8s", num + 1, i.getName(), i.getWeight(), i.getValue(), i.getStrength());
+                System.out.printf("%-4d %-40s %-8s %-8s %-8s", num + 1, i.getName(), i.getStrength(), i.getWeight(), i.getValue());
 
                 // tell them if this thing is equipped
                 if (i == equippedArmor) {
