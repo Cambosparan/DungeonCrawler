@@ -13,7 +13,7 @@ public class Player extends Character {
         items = new Inventory(100);
 
         // give them some basic stuff to start with
-        items.addAndEquip(new Item(ItemType.Weapon, "Iron Sword", 7, 9, 25));
+        items.addAndEquip(new Item(ItemType.Weapon, "Iron Dagger", 4, 2, 10));
         items.addAndEquip(new Item(ItemType.Armor, "Leather Armor", 26, 6, 125));
 	items.add(new Item(ItemType.Other, "Lockpick", 0, 0, 2));
     }
