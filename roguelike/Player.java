@@ -13,9 +13,13 @@ public class Player extends Character {
         items = new Inventory(100);
 
         // give them some basic stuff to start with
-        // TODO make up your own starting equipment!
-        items.addAndEquip(new Item(ItemType.Weapon, "Iron Dagger", 5, 12, 7));
-        items.addAndEquip(new Item(ItemType.Armor, "Leather Armor", 15, 20, 3));
+        items.addAndEquip(new Item(ItemType.Weapon, "Iron Sword", 7, 9, 25));
+        items.addAndEquip(new Item(ItemType.Armor, "Leather Armor", 26, 6, 125));
+	items.addAndEquip(new Item(ItemType.Armor, "Leather Helmet", 12, 2, 60));
+	items.addAndEquip(new Item(ItemType.Armor, "Leather Bracers", 7, 2, 25));
+	items.addAndEquip(new Item(ItemType.Armor, "Leather Boots", 7, 2, 25));
+	items.addAndEquip(new Item(ItemType.Armor, "Hide Shield", 15, 4, 25));
+	items.add(new Item(ItemType.Other, "Lockpick", 0, 0, 2));
     }
 
     @Override
