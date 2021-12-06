@@ -12,7 +12,7 @@ public class ItemGenerator {
 		Item item = new Item(ItemType.Other, "Item", 0, 0, 0);
 		int itemPicker = rng.nextInt(3);
 		if (itemPicker == 0) {
-			int weaponPicker = rng.nextInt(5);
+			int weaponPicker = rng.nextInt(10);
 			if (weaponPicker == 0) {
 				item = new Item(ItemType.Weapon, "Steel Sword", 8, 10, 45);
 			}
@@ -28,10 +28,25 @@ public class ItemGenerator {
 			else if (weaponPicker == 4) {
 				item = new Item(ItemType.Weapon, "Dragonbone Warhammer", 28, 33, 4275);
 			}
+			else if (weaponPicker == 5) {
+				item = new Item(ItemType.Weapon, "Dwarven Sword", 10, 12, 135);
+			}
+			else if (weaponPicker == 6) {
+				item = new Item(ItemType.Weapon, "Nightingale Bow", 19, 18, 2500);
+			}
+			else if (weaponPicker == 7) {
+				item = new Item(ItemType.Weapon, "Pickaxe", 5, 10, 5);
+			}
+			else if (weaponPicker == 8) {
+				item = new Item(ItemType.Weapon, "Woodcutter's Axe", 5, 10, 5);
+			}
+			else if (weaponPicker == 9) {
+				item = new Item(ItemType.Weapon, "Glass Battleaxe", 22, 25, 900);
+			}
 		}
 
 		if (itemPicker == 1) {
-			int armorPicker = rng.nextInt(5);
+			int armorPicker = rng.nextInt(10);
 			if (armorPicker == 0) {
 				item = new Item(ItemType.Armor, "Steel Horned Helmet", 17, 5, 125);
 			}
@@ -47,10 +62,25 @@ public class ItemGenerator {
 			else if (armorPicker == 4) {
 				item = new Item(ItemType.Armor, "Steel Shield", 24, 12, 150);
 			}
+			else if (armorPicker == 5) {
+				item = new Item(ItemType.Armor, "Daedric Helmet", 23, 15, 1600);
+			}
+			else if (armorPicker == 6) {
+				item = new Item(ItemType.Armor, "Daedric Armor", 49, 50, 3200);
+			}
+			else if (armorPicker == 7) {
+				item = new Item(ItemType.Armor, "Daedric Gauntlets", 18, 6, 625);
+			}
+			else if (armorPicker == 8) {
+				item = new Item(ItemType.Armor, "Daedric Boots", 18, 10, 625);
+			}
+			else if (armorPicker == 9) {
+				item = new Item(ItemType.Armor, "Daedric Shield", 36, 15, 1600);
+			}
 		}
 
 		if (itemPicker == 2) {
-			int otherPicker = rng.nextInt(5);
+			int otherPicker = rng.nextInt(7);
 			if (otherPicker == 0) {
 				item = new Item(ItemType.Other, "Lockpick", 0, 0, 2);
 			}
@@ -65,6 +95,12 @@ public class ItemGenerator {
 			}
 			else if (otherPicker == 4) {
 				item = new Item(ItemType.Other, "Steel Ingot", 0, 1, 20);
+			}
+			else if (otherPicker == 5) {
+				item = new Item(ItemType.Other, "Flawless Diamond", 0, 1, 1000);
+			}
+			else if (otherPicker == 6) {
+				item = new Item(ItemType.Other, "Torch", 0, 1, 2);
 			}
 		}
 		return item;
