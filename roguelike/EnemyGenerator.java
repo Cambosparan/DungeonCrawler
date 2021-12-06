@@ -12,13 +12,13 @@ public class EnemyGenerator {
 		Enemy enemy = new Enemy("Enemy", row, col, 0, 0, 0);
 		int enemyPicker = rng.nextInt(3);
 		if (enemyPicker == 0) {
-			enemy = new Enemy("Draugr", row, col, 50, 8, 20);
+			enemy = new Enemy("Draugr", row, col, 50, 8, 0);
 		}
 		else if (enemyPicker == 1) {
 			enemy = new Enemy("Restless Draugr", row, col, 150, 9, 0);
 		}
 		else if (enemyPicker == 2) {
-			enemy = new Enemy("Draugr Overlord", row, col, 210, 13, 20);
+			enemy = new Enemy("Draugr Overlord", row, col, 210, 13, 0);
 		}
 		return enemy;
 	}
