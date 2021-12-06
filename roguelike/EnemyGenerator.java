@@ -20,5 +20,6 @@ public class EnemyGenerator {
 		else if (enemyPicker == 2) {
 			enemy = new Enemy("Draugr Overlord", row, col, 210, 13, 20);
 		}
+		return enemy;
 	}
 }
