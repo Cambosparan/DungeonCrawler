@@ -19,15 +19,15 @@ public class Game {
 
     // prints a help menu to the left of the map
     private void showHelp() {
-        String[] cmds = {"Commands:",
-                         "---------",
-                         "Move: Arrow Keys",
-                         "Pickup an item: p",
-                         "Drop an item: d",
-                         "List items: l",
-                         "Equip weapon: w",
-                         "Equip armor: a",
-                         "Quit: q"
+        String[] cmds = {" Commands:",
+                         " ---------",
+                         " Move: Arrow Keys",
+                         " Pickup an item: p",
+                         " Drop an item: d",
+                         " List items: l",
+                         " Equip weapon: w",
+                         " Equip armor: a",
+                         " Quit: q"
         };
         Terminal.setForeground(Color.GREEN);
         for (int row = 0; row < cmds.length; row++) {
