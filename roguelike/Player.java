@@ -15,9 +15,9 @@ public class Player extends Character {
         // give them some basic stuff to start with
         items.addAndEquip(new Item(ItemType.Weapon, "Iron Dagger", 4, 2, 10));
         items.addAndEquip(new Item(ItemType.Armor, "Leather Armor", 26, 6, 125));
-	items.add(new Item(ItemType.Other, "Potion of minor healing", 0, 2, 17));
-	items.add(new Item(ItemType.Other, "Potion of minor healing", 0, 2, 17));
-	items.add(new Item(ItemType.Other, "Potion of minor healing", 0, 2, 17));
+	items.add(new Item(ItemType.Potion, "Potion of minor healing", 0, 2, 17));
+	items.add(new Item(ItemType.Potion, "Potion of minor healing", 0, 2, 17));
+	items.add(new Item(ItemType.Potion, "Potion of minor healing", 0, 2, 17));
     }
 
     @Override
