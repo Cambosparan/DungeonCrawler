@@ -10,7 +10,7 @@ public class ItemGenerator {
 	public static Item generate() {
 		Random rng = new Random();
 		Item item = new Item(ItemType.Other, "Item", 0, 0, 0);
-		int itemPicker = rng.nextInt(3);
+		int itemPicker = rng.nextInt(4);
 		if (itemPicker == 0) {
 			int weaponPicker = rng.nextInt(10);
 			if (weaponPicker == 0) {
@@ -87,6 +87,10 @@ public class ItemGenerator {
 			else if (otherPicker == 6) {
 				item = new Item(ItemType.Other, "Torch", 0, 1, 2);
 			}
+		}
+
+		if (itemPicker == 3) {
+			item = new Item(ItemType.Potion, "Minor potion of healing", 0, 25, 17);
 		}
 		return item;
 	}
