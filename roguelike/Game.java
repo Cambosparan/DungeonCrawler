@@ -27,6 +27,7 @@ public class Game {
                          " List items: l",
                          " Equip weapon: w",
                          " Equip armor: a",
+			 " Use a potion: u",
                          " Quit: q"
         };
         Terminal.setForeground(Color.GREEN);
@@ -106,6 +107,11 @@ public class Game {
                 player.getInventory().equipArmor();
                 redrawMapAndHelp();
                 break;
+
+	    case u:
+		player.getInventory().usePotion();
+		redrawMapAndHelp();
+		break;
 
             // handle movement
             case LEFT: player.move(0, -1, room);
