@@ -1,5 +1,6 @@
-// ItemGenerator.java
-// this class contains a static method for creating items randomly
+/** This is the item generation class that creates a random item that can be picked up
+ * @author Ethan Young
+ */
 
 import java.util.Random;
 
@@ -7,6 +8,11 @@ public class ItemGenerator {
 
 	private static Random rng;
 
+	/** This is the Item generate method 
+	 * It uses an rng to decide which item is created
+	 * The method takes in no parameters and returns the item created
+	 * @return the item that was chosen
+	 */
 	public static Item generate() {
 		Random rng = new Random();
 		Item item = new Item(ItemType.Other, "Item", 0, 0, 0);
