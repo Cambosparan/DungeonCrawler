@@ -1,5 +1,6 @@
-// EnemyGenerator.java
-// this class contains a static method for creating enemies randomly
+/**This is the enemy generation class that creates a random enemy
+ * @author Ethan Young
+ */
 
 import java.util.Random;
 
@@ -7,6 +8,14 @@ public class EnemyGenerator {
 
 	private static Random rng;
 
+	/**This is the Enemy generate method
+	 * This method uses an rng to decide which enemy is created
+	 * This method takes in two paramters, the row and column
+	 * This method returns the enemy
+	 * @param row this is the row where the enemy is put
+	 * @param col this is the column where the enemy is put
+	 * @return the enemy that is created
+	 */
 	public static Enemy generate(int row, int col) {
 		Random rng = new Random();
 		Enemy enemy = new Enemy("Enemy", row, col, 0, 0, 0);
