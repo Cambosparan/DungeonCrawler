@@ -55,7 +55,7 @@ public class Inventory {
     }
 
     public Item getUsedPotion() {
-	    return usePotion;
+	    return usedPotion;
     }
 
     // returns the total weight of all items stored
