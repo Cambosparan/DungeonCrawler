@@ -13,6 +13,7 @@ public class Inventory {
     // which item is equipped, if any
     private Item equippedArmor;
     private Item equippedWeapon;
+    private Item usedPotion;
 
     // the max weight limit for the player here
     private int maxWeight;
@@ -53,6 +54,10 @@ public class Inventory {
         return equippedArmor;
     }
 
+    public Item getUsedPotion() {
+	    return usePotion;
+    }
+
     // returns the total weight of all items stored
     public int totalWeight() {
         int total = 0;
@@ -85,7 +90,7 @@ public class Inventory {
                     System.out.print(" (equipped armor)");
                 } else if (i == equippedWeapon) {
                     System.out.print(" (equipped weapon)");
-                }
+                } 
                 System.out.print("\n\r");
 
                 num++;
@@ -151,6 +156,10 @@ public class Inventory {
     // equip a piece of armor
     public void equipArmor() {
         equippedArmor = equip(ItemType.Armor);
+    }
+
+    public void usePotion() {
+	    usedPotion = equip(ItemType.Potion);
     }
 
     // a method which allows users to choose an item
