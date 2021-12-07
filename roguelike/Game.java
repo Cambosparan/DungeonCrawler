@@ -28,6 +28,8 @@ public class Game {
                          " Equip weapon: w",
                          " Equip armor: a",
 			 " Use a potion: u",
+			 " Save: s",
+			 " Restore: r",
                          " Quit: q"
         };
         Terminal.setForeground(Color.GREEN);
